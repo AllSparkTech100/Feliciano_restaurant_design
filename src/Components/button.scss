@@ -1,0 +1,28 @@
+@import "../_variable";
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  background-color: $present;
+  text-align: center;
+  color: $pure;
+  &:hover {
+    background-color: $present;
+    color: $pure;
+  }
+}
+img {
+  height: 100dvh;
+  width: 100vw;
+}
+
+Caption {
+  h3 {
+    font-family: $fontFamily;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}

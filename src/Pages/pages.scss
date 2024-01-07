@@ -1,0 +1,51 @@
+@import "../_variable";
+main {
+  p {
+    color: #787878;
+  }
+
+  .good {
+    @include flex;
+    flex-direction: column;
+    .under-text {
+      font-family: $font;
+      text-align: center;
+    }
+  }
+
+  .rest_info {
+    .two_img {
+      @include flex;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    h6 {
+      font-family: $fontFamily;
+      color: #787878;
+      top: 105px;
+      z-index: -99;
+      font-size: 150px;
+    }
+
+    h3 {
+      font-size: 68px;
+      font-family: $font;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    .rest_info {
+      h6 {
+        top: 60px;
+        font-size: 100px;
+      }
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+}
