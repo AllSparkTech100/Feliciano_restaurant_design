@@ -64,10 +64,10 @@ function Home() {
 
         <Container fluid className="mt-5">
           <Row className="rest_info">
-            <Col sm={4} md={5} className="two_img mt-2">
+            <Col sm={4} md={3} className="two_img mt-2">
               <Image src={barr} alt="" rounded />
             </Col>
-            <Col sm={8} md={7} className="mb-5">
+            <Col sm={8} md={9} className="mb-5">
               <h6 className="fw-normal position-relative">about</h6>
               <h3 className="fw-semibold">Feliciano Restaurant</h3>
               <p className="fw-normal">
