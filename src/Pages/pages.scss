@@ -29,9 +29,12 @@ main {
       font-size: 150px;
     }
 
-    h3 {
+    h3{
       font-size: 68px;
       font-family: $font;
+    }
+    p{
+        font-family: $font;
     }
   }
 }

@@ -1,8 +1,7 @@
 import "./pages.scss";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
-import { Container, Row, Col, Image} from "react-bootstrap";
-import bar from "../Photos/chef-1.jpg";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import barr from "../Photos/chef-2.jpg";
 function Home() {
   return (
@@ -65,20 +64,19 @@ function Home() {
 
         <Container fluid className="mt-5">
           <Row className="rest_info">
-            <Col sm={2} md={4} className="two_img mb-2">
-              <Image src={bar} alt="" rounded/>
+            <Col sm={4} md={5} className="two_img mt-2">
+              <Image src={barr} alt="" rounded />
             </Col>
-
-            <Col sm={2} md={4} className="two_img mt-2">
-            <Image src={barr} alt="" rounded/>
-            </Col>
-            <Col sm={8} md={4} className="mb-5">
+            <Col sm={8} md={7} className="mb-5">
               <h6 className="fw-normal position-relative">about</h6>
               <h3 className="fw-semibold">Feliciano Restaurant</h3>
-              <p>
+              <p className="fw-normal">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Consequatur sint similique aliquam laboriosam sapiente eligendi
                 dolore quae distinctio quisquam minima?
+              </p>
+              <p className="fw-normal fs-4">
+                Mon -Fri <span className="fw-bold">8AM - 11PM</span>
               </p>
             </Col>
           </Row>
