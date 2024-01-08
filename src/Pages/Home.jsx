@@ -62,22 +62,48 @@ function Home() {
           </Row>
         </Container>
 
-        <Container fluid className="mt-5">
-          <Row className="rest_info">
-            <Col sm={4} md={3} className="two_img mt-2">
-              <Image src={barr} alt="" rounded />
+        <Container fluid className="mt-5 h-100">
+          <Row className="rest_info m-1" gap={3}>
+            <Col sm={6} md={7} xl={6} className="two_img mt-2">
+              <Image
+                src={barr}
+                alt=""
+                className="h-100 w-100 object-fit-cover"
+                rounded
+              />
             </Col>
-            <Col sm={8} md={9} className="mb-5">
+            <Col sm={6} md={5} xl={6} className="mb-5">
               <h6 className="fw-normal position-relative">about</h6>
-              <h3 className="fw-semibold">Feliciano Restaurant</h3>
-              <p className="fw-normal">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consequatur sint similique aliquam laboriosam sapiente eligendi
-                dolore quae distinctio quisquam minima?
+              <h3 className="fw-medium flex-md-wrap">Feliciano Restaurant</h3>
+              <p className="fw-normal mt-3 fs-md-4 fs-5">
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
               </p>
-              <p className="fw-normal fs-4">
-                Mon -Fri <span className="fw-bold">8AM - 11PM</span>
+              <p className="fw-normal fs-4 mt-4">
+                Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
               </p>
+              <h4 className="fw-bold fs-1">+234-9027-91057</h4>
+            </Col>
+          </Row>
+
+          <Row className='mt-5 m-1 stat'>
+            <Col md={2}>
+                <h3 className='fw-bold '>18</h3>
+                <h6>YEARS OF EXPERIENCE</h6>
+            </Col>
+            <Col md={2}>
+                <h3 className='fw-bold '>100</h3>
+                <h6>MENUS / DISHES</h6>
+            </Col>
+            <Col md={2}>
+                <h3 className='fw-bold '>500</h3>
+                <h6>STAFFS</h6>
+            </Col>
+            <Col md={2}>
+                <h3 className='fw-bold '>15,000</h3>
+                <h6>HAPPY CUSTOMERS</h6>
+            </Col>
+            <Col md={4}>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto ad reiciendis officia dicta esse fugit recusandae tempore repudiandae, tenetur non commodi sit quaerat facere optio, quod corporis, rerum cum voluptas. Ad suscipit officiis nam vero. Quidem eaque magnam illum.</p>
             </Col>
           </Row>
         </Container>

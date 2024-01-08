@@ -15,7 +15,6 @@ main {
 
   .rest_info {
     .two_img {
-      @include flex;
       img {
         width: 20rem;
         height: 20rem;
@@ -29,25 +28,37 @@ main {
       font-size: 150px;
     }
 
-    h3{
-      font-size: 68px;
+    h3 {
+      font-size: 80px;
       font-family: $font;
     }
-    p{
-        font-family: $font;
+    p {
+      font-family: $font;
+    }
+
+    h4 {
+      color: #787878;
+      font-family: $font;
+    }
+  }
+
+  .stat{
+    font-family: $font;
+    h3{
+        color: #787878;
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   main {
     .rest_info {
       h6 {
         top: 60px;
-        font-size: 100px;
+        font-size: 95px;
       }
       h3 {
-        font-size: 26px;
+        font-size: 36px;
       }
     }
   }
