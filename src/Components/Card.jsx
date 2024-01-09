@@ -6,13 +6,13 @@ import './button.scss';
 function CardComp(props){
   return (
     <div>
-      <Card className="border-0">
+      <Card className="border-0 text-center cardd">
         <Card.Body>
-          <Card.Title>{props.icon}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            <h6>{props.subtitle}</h6>
+          <Card.Title className="text-danger fs-1">{props.icon}</Card.Title>
+          <Card.Subtitle className="mb-2 text-dark fs-1">
+            <h6  className="fs-3">{props.subtitle}</h6>
           </Card.Subtitle>
-          <Card.Text><p>{props.text}</p></Card.Text>
+          <Card.Text><p className="fs-5">{props.text}</p></Card.Text>
         </Card.Body>
       </Card>
     </div>

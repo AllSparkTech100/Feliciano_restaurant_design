@@ -3,7 +3,8 @@ import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { FaBirthdayCake } from "react-icons/fa";
+import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
+import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
 
 function Home() {
@@ -69,7 +70,7 @@ function Home() {
         {/* Info Sect */}
         <Container fluid className="mt-5 h-100">
           {/* About */}
-          <Row className="rest_info m-1" gap={3}>
+          <Row className="rest_info m-1">
             <Col sm={6} md={7} xl={6} className="two_img mt-2">
               <Image
                 src={barr}
@@ -78,10 +79,12 @@ function Home() {
                 rounded
               />
             </Col>
-            <Col sm={6} md={5} xl={6} className="mb-5">
-              <h6 className="fw-normal position-relative">about</h6>
-              <h3 className="fw-medium flex-md-wrap">Feliciano Restaurant</h3>
-              <p className="fw-normal mt-3 fs-md-4 fs-5">
+            <Col sm={6} md={5} xl={6} className="tp">
+              <h6 className="fw-normal position-relative text-capitalize ">
+                about
+              </h6>
+              <h3 className="fw-medium">Feliciano Restaurant</h3>
+              <p className="fw-normal mt-3 fs-4">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
                 which roasted parts of sentences fly into your mouth.
@@ -94,28 +97,27 @@ function Home() {
           </Row>
 
           {/* Personnel Count */}
-          <Row className="stat">
+          <Row className="stat p-md-3">
             <Col md={2} sm={12}>
-              <h3 className="fw-medium">18</h3>
+              <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
             <Col md={2} sm={12}>
-              <h3 className="fw-medium">100</h3>
+              <h3 className="fw-semibold">100</h3>
               <h6>MENUS / DISHES</h6>
             </Col>
             <Col md={2} sm={12}>
-              <h3 className="fw-medium">50</h3>
+              <h3 className="fw-semibold">50</h3>
               <h6>STAFFS</h6>
             </Col>
             <Col md={2} sm={12}>
-              <h3 className="fw-medium">15,000</h3>
+              <h3 className="fw-semibold">15,000</h3>
               <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4} sm={6} className="mt-3">
-              <p>
+            <Col md={4} sm={12}>
+              <p className="fs-5 text-start">
                 A small river named Duden flows by their place and supplies it
-                with the necessary regelialia. It is a paradisematic country, in
-                which roasted parts of sentences fly into your mouth.
+                with the necessary regelialia.
               </p>
             </Col>
           </Row>
@@ -126,10 +128,24 @@ function Home() {
               <h2 className="fw-bolder">Catering Services</h2>
             </Col>
             <Row>
-              <Col md={4} sm={12}>
+              <Col md={4} sm={12} className="mt-4">
                 <CardComp
-                icon={<FaBirthdayCake/>}
+                  icon={<FaBirthdayCake />}
                   subtitle="Birthday Party"
+                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+                />
+              </Col>
+              <Col md={4} sm={12} className="mt-4">
+                <CardComp
+                  icon={<FaBusinessTime />}
+                  subtitle="Business Meeting"
+                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+                />
+              </Col>
+              <Col md={4} sm={12} className="mt-4">
+                <CardComp
+                  icon={<BiDish />}
+                  subtitle="Wedding Party"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>

@@ -11,6 +11,10 @@ Caption {
     font-family: $fontFamily;
   }
 }
+
+Card{
+  font-family: $font;
+}
 @media screen and (max-width: 320px) {
   .btn {
     padding: 0.5rem 1rem;
