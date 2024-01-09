@@ -19,5 +19,26 @@
 
 $present: #c8a97e;
 $pure: white;
+$para: #898989;
+$june:#787878;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
+
+.bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.btn {
+  padding: 1rem 1rem;
+  border-radius: 9px;
+  background-color: $present;
+  text-align: center;
+  color: $pure;
+  &:hover {
+    background-color: $present;
+    color: $pure;
+  }
+}

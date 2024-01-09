@@ -1,16 +1,6 @@
 @import "../_variable";
 
-.btn {
-  padding: 1rem 2rem;
-  border-radius: 9px;
-  background-color: $present;
-  text-align: center;
-  color: $pure;
-  &:hover {
-    background-color: $present;
-    color: $pure;
-  }
-}
+
 img {
   height: 100dvh;
   width: 100vw;

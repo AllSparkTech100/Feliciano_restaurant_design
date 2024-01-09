@@ -1,14 +1,18 @@
 import "./pages.scss";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
+import CardComp from "../Components/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import { FaBirthdayCake } from "react-icons/fa";
 import barr from "../Photos/chef-2.jpg";
+
 function Home() {
   return (
     <>
       <Slide />
 
       <main className="my-5">
+        {/* First Line */}
         <Container fluid>
           <Row className="m-md-0 m-2">
             <Col sm={3} md={3} className="good">
@@ -62,7 +66,9 @@ function Home() {
           </Row>
         </Container>
 
+        {/* Info Sect */}
         <Container fluid className="mt-5 h-100">
+          {/* About */}
           <Row className="rest_info m-1" gap={3}>
             <Col sm={6} md={7} xl={6} className="two_img mt-2">
               <Image
@@ -76,7 +82,9 @@ function Home() {
               <h6 className="fw-normal position-relative">about</h6>
               <h3 className="fw-medium flex-md-wrap">Feliciano Restaurant</h3>
               <p className="fw-normal mt-3 fs-md-4 fs-5">
-              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
               </p>
               <p className="fw-normal fs-4 mt-4">
                 Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
@@ -85,27 +93,48 @@ function Home() {
             </Col>
           </Row>
 
-          <Row className='mt-5 m-1 stat'>
-            <Col md={2}>
-                <h3 className='fw-bold '>18</h3>
-                <h6>YEARS OF EXPERIENCE</h6>
+          {/* Personnel Count */}
+          <Row className="stat">
+            <Col md={2} sm={12}>
+              <h3 className="fw-medium">18</h3>
+              <h6>YEARS OF EXPERIENCE</h6>
             </Col>
-            <Col md={2}>
-                <h3 className='fw-bold '>100</h3>
-                <h6>MENUS / DISHES</h6>
+            <Col md={2} sm={12}>
+              <h3 className="fw-medium">100</h3>
+              <h6>MENUS / DISHES</h6>
             </Col>
-            <Col md={2}>
-                <h3 className='fw-bold '>500</h3>
-                <h6>STAFFS</h6>
+            <Col md={2} sm={12}>
+              <h3 className="fw-medium">50</h3>
+              <h6>STAFFS</h6>
             </Col>
-            <Col md={2}>
-                <h3 className='fw-bold '>15,000</h3>
-                <h6>HAPPY CUSTOMERS</h6>
+            <Col md={2} sm={12}>
+              <h3 className="fw-medium">15,000</h3>
+              <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto ad reiciendis officia dicta esse fugit recusandae tempore repudiandae, tenetur non commodi sit quaerat facere optio, quod corporis, rerum cum voluptas. Ad suscipit officiis nam vero. Quidem eaque magnam illum.</p>
+            <Col md={4} sm={6} className="mt-3">
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
             </Col>
           </Row>
+          {/* Services */}
+          <section id="services">
+            <Col sm={12} md={12} className="text-center head">
+              <h4>Services</h4>
+              <h2 className="fw-bolder">Catering Services</h2>
+            </Col>
+            <Row>
+              <Col md={4} sm={12}>
+                <CardComp
+                icon={<FaBirthdayCake/>}
+                  subtitle="Birthday Party"
+                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+                />
+              </Col>
+            </Row>
+          </section>
         </Container>
       </main>
     </>

@@ -42,13 +42,47 @@ main {
     }
   }
 
-  .stat{
+  .stat {
     font-family: $font;
-    h3{
-        color: #787878;
+    text-align: center;
+    margin-top: 3rem;
+
+    h3 {
+      color: $june;
+      font-size: 44px;
+    }
+    p {
+      line-height: auto;
+      color: #C8A97E;
+    }
+    h6{
+        color: $para;
     }
   }
+
+  #services{
+    margin-top: 8rem;
+    .head{
+        h4{
+            font-family: $fontFamily;
+            font-size: 120px;
+            color: $present;
+            z-index: -99;
+            position: relative;
+            top: 80px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        h2{
+            font-size: 60px;
+            font-family: $font;
+        }
+    }
+
+  }
 }
+
 
 @media screen and (max-width: 480px) {
   main {
@@ -60,6 +94,17 @@ main {
       h3 {
         font-size: 36px;
       }
+    }
+    #services{
+        .head{
+            h4{
+                top: 50px;
+                font-size: 66px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
     }
   }
 }
