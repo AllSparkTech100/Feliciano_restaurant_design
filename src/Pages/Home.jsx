@@ -98,7 +98,7 @@ function Home() {
 
           {/* Personnel Count */}
           <Row className="stat p-md-3">
-            <Col md={2} sm={12}>
+            <Col md={2} sm={12} className="text-md-start">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
