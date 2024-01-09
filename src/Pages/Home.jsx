@@ -157,7 +157,7 @@ function Home() {
         <section id="menu">
         <Col sm={12} md={12} className="text-center head">
               <h4>Specialties</h4>
-              <h2 className="">Our Menu</h2>
+              <h2 className="fw-bold">Our Menu</h2>
             </Col>
             <Row>
 
