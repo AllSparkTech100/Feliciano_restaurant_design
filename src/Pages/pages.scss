@@ -20,9 +20,7 @@ main {
         height: 20rem;
       }
     }
-    .tp{
-        margin-top: -8rem;
-    }
+
     h6 {
       font-family: $fontFamily;
       color: $present;
@@ -58,73 +56,90 @@ main {
     }
     p {
       line-height: auto;
-      color:$june;
+      color: $june;
     }
-    h6{
-        color: $june;
+    h6 {
+      color: $june;
     }
   }
 
-  #services{
+  #services {
     margin-top: 8rem;
-    .head{
-        h4{
-            font-family: $fontFamily;
-            font-size: 120px;
-            color: $present;
-            z-index: -99;
-            position: relative;
-            top: 80px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-        h2{
-            font-size: 60px;
-            font-family: $font;
-        }
+    .head {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
     }
+  }
 
+  #menu {
+    .head {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
+    }
   }
 }
-
 
 @media screen and (max-width: 480px) {
   main {
     .rest_info {
       h6 {
         top: 60px;
-        font-size: 95px;
+        font-size: 65px;
       }
       h3 {
-        font-size: 36px;
+        font-size: 20px;
       }
     }
-    #services{
-        .head{
-            h4{
-                top: 50px;
-                font-size: 66px;
-            }
-            h2{
-                font-size: 30px;
-            }
+    #services {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
         }
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width:576px) {
-    main{
-        .rest_info{
-            h6 {
-                font-size: 120px;
-              }
-          
-            //   h3 {
-            //     font-size: 45px;
-            //   }
-        }
+@media screen and (min-width: 576px) {
+  main {
+    .rest_info {
+      h6 {
+        font-size: 120px;
+      }
+
+      //   h3 {
+      //     font-size: 45px;
+      //   }
     }
-    
+  }
 }

@@ -97,25 +97,25 @@ function Home() {
           </Row>
 
           {/* Personnel Count */}
-          <Row className="stat p-md-3">
-            <Col md={2} sm={12} className="text-md-start">
+          <Row className="stat p-md-3 text-md-start text-center">
+            <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
-            <Col md={2} sm={12}>
+            <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">100</h3>
               <h6>MENUS / DISHES</h6>
             </Col>
-            <Col md={2} sm={12}>
+            <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">50</h3>
               <h6>STAFFS</h6>
             </Col>
-            <Col md={2} sm={12}>
+            <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">15,000</h3>
               <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4} sm={12}>
-              <p className="fs-5 text-start">
+            <Col md={4} sm={12} className="mb-4">
+              <p className="fs-5 text-center text-md-start ">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
               </p>
@@ -151,6 +151,18 @@ function Home() {
               </Col>
             </Row>
           </section>
+
+        {/* Special Menu */}
+
+        <section id="menu">
+        <Col sm={12} md={12} className="text-center head">
+              <h4>Specialties</h4>
+              <h2 className="">Our Menu</h2>
+            </Col>
+            <Row>
+
+            </Row>
+        </section>
         </Container>
       </main>
     </>
