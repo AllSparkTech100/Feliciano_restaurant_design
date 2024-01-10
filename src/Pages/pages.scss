@@ -106,6 +106,7 @@ main {
 
   .chef{
     margin-top: 3rem;
+    font-family: $font;
     .head {
         h4 {
           font-family: $fontFamily;
@@ -122,6 +123,10 @@ main {
           font-size: 60px;
           font-family: $font;
         }
+      }
+
+      #imges{
+        margin-top: 4rem;
       }
   }
 }
