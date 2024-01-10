@@ -1,5 +1,4 @@
 import { Carousel } from "react-bootstrap";
-// import styled from "styled-components";
 import "./button.scss";
 
 function Slide() {
@@ -39,9 +38,7 @@ function Slide() {
           />
           <Carousel.Caption>
             <h3>Feliciano</h3>
-            <p>
-              DELICIOUS SPECIALTIES
-            </p>
+            <p>DELICIOUS SPECIALTIES</p>
           </Carousel.Caption>
         </Carousel.Item>
         {/* <Gradient /> */}

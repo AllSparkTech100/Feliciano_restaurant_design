@@ -5,7 +5,6 @@ import CardComp from "../Components/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
-import ImgCard from "../Components/ImgCard";
 import barr from "../Photos/chef-2.jpg";
 
 function Home() {
@@ -160,10 +159,16 @@ function Home() {
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
-         <Container>
-            <ImgCard img={'https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_2119_1074.jpg'} text='Grilled Beef with Tomatoes' price='$24' contents='Meat, Rice, Potato, Tomato'/>
-         </Container>
         </section>
+        </Container>
+
+        <Container>
+            <section className="chef">
+            <Col sm={12} md={12} className="text-center head">
+              <h4>Chef</h4>
+              <h2 className="fw-bold">Our Master Chef</h2>
+            </Col>
+            </section>
         </Container>
       </main>
     </>
