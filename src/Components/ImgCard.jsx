@@ -1,23 +1,18 @@
-/* eslint-disable react/prop-types */
 import { Card } from "react-bootstrap";
-import "./button.scss";
-import {
-  FaTwitter,
-  FaGooglePlusG,
-  FaFacebookF,
-  FaInstagram,
-} from "react-icons/fa";
 
 function ImgCard(props) {
   return (
     <div>
-      <Card className='px-3' rounded-4  style={{height:'80vh', width: '20rem', border:'none'}}>
-        <Card.Img variant="top"  src={props.imgUrl} className='h-100 object-fit-cover' />
+      {" asdfaq"}
+      <Card>
+        <Card.Img variant="top" src={props.imgUrl} />
         <Card.Body>
-          <Card.Title className='fw-bold fs-6'>{props.name}</Card.Title>
-          <Card.Text style={{color: "#787878"}} className=''>{props.text}</Card.Text>
-          <div className="socials">
-            <FaTwitter size={20} /> <FaFacebookF size={20}/> <FaGooglePlusG size={20}/> <FaInstagram size={20}/>
+          <Card.Title>{props.name}</Card.Title>
+          <Card.Text>
+            {props.text}
+          </Card.Text>
+          <div className="d-flex align-items-center justify-content-center">
+            
           </div>
         </Card.Body>
       </Card>
