@@ -1,13 +1,16 @@
 @import "../_variable";
 
-
 img {
   height: 100dvh;
   width: 100vw;
 }
 
+.socials {
+  color: $present;
+  letter-spacing: 10px;
+}
 
-Card{
+Card {
   font-family: $font;
 }
 @media screen and (max-width: 320px) {

@@ -1,4 +1,5 @@
 import "./pages.scss";
+import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
@@ -6,6 +7,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
+import chef from "../Photos/chef-1.jpg";
 
 function Home() {
   return (
@@ -152,23 +154,37 @@ function Home() {
             </Row>
           </section>
 
-        {/* Special Menu */}
+          {/* Special Menu */}
 
-        <section id="menu">
-        <Col sm={12} md={12} className="text-center head">
+          <section id="menu">
+            <Col sm={12} md={12} className="text-center head">
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
-        </section>
+          </section>
         </Container>
 
         <Container>
-            <section className="chef">
+          <section className="chef">
             <Col sm={12} md={12} className="text-center head">
               <h4>Chef</h4>
               <h2 className="fw-bold">Our Master Chef</h2>
             </Col>
-            </section>
+            <Row id='imges'>
+              <Col md={3} sm={12}>
+                <ImgCard imgUrl={chef} name={'John Smooth'} text={'Restaurant Owner'}/>
+              </Col>
+              <Col md={3} sm={12}>
+                <ImgCard imgUrl={'https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg'} name={'Rebecca Welson'} text={'Head Chef'}/>
+              </Col>
+              <Col md={3} sm={12}>
+                <ImgCard imgUrl={'https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none'} name={'Kharl Bryant'} text={'Chef'}/>
+              </Col>
+              <Col md={3} sm={12}>
+                <ImgCard imgUrl={'https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png'} name={'Luke Simon'} text={'Chef'}/>
+              </Col>
+            </Row>
+          </section>
         </Container>
       </main>
     </>
