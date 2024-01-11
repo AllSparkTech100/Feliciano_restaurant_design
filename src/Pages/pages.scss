@@ -104,31 +104,32 @@ main {
     }
   }
 
-  .chef{
+  .chef {
     margin-top: 3rem;
     font-family: $font;
     .head {
-        h4 {
-          font-family: $fontFamily;
-          font-size: 120px;
-          color: $present;
-          z-index: -99;
-          position: relative;
-          top: 80px;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        }
-        h2 {
-          font-size: 60px;
-          font-family: $font;
-        }
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
+    }
 
-      #imges{
-        margin-top: 4rem;
-      }
+    #imges {
+      margin-top: 4rem;
+    }
   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -153,31 +154,31 @@ main {
         }
       }
     }
-    #menu{
-        .head {
-            h4 {
-              top: 50px;
-              font-size: 66px;
-            }
-            h2 {
-              font-size: 30px;
-            }
-          }
+    #menu {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
 
-    .chef{
-          .head {
-            h4 {
-              top: 50px;
-              font-size: 66px;
-            }
-            h2 {
-              font-size: 30px;
-            }
-          }
-    }
+    .chef {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
   }
+}
 
 @media screen and (min-width: 576px) {
   main {

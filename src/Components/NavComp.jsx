@@ -33,7 +33,7 @@ function NavComp() {
     display: 'flex',
     alignItems: 'center',
     justifyContents: 'center',
-    height: isScrolled ? 'auto' : '90px',
+    height: isScrolled ? '80px' : '90px',
     borderBottom: isScrolled ? "none" : "1px solid white",
   };
 

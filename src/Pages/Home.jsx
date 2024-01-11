@@ -3,6 +3,7 @@ import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
+import Form from "../Components/Form";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
@@ -164,28 +165,54 @@ function Home() {
           </section>
         </Container>
 
+        {/* Chefs */}
         <Container>
           <section className="chef">
             <Col sm={12} md={12} className="text-center head">
               <h4>Chef</h4>
               <h2 className="fw-bold">Our Master Chef</h2>
             </Col>
-            <Row id='imges'>
+            <Row id="imges">
               <Col md={3} sm={12}>
-                <ImgCard imgUrl={chef} name={'John Smooth'} text={'Restaurant Owner'}/>
+                <ImgCard
+                  imgUrl={chef}
+                  name={"John Smooth"}
+                  text={"Restaurant Owner"}
+                />
               </Col>
               <Col md={3} sm={12}>
-                <ImgCard imgUrl={'https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg'} name={'Rebecca Welson'} text={'Head Chef'}/>
+                <ImgCard
+                  imgUrl={
+                    "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
+                  }
+                  name={"Rebecca Welson"}
+                  text={"Head Chef"}
+                />
               </Col>
               <Col md={3} sm={12}>
-                <ImgCard imgUrl={'https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none'} name={'Kharl Bryant'} text={'Chef'}/>
+                <ImgCard
+                  imgUrl={
+                    "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
+                  }
+                  name={"Kharl Bryant"}
+                  text={"Chef"}
+                />
               </Col>
               <Col md={3} sm={12}>
-                <ImgCard imgUrl={'https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png'} name={'Luke Simon'} text={'Chef'}/>
+                <ImgCard
+                  imgUrl={
+                    "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
+                  }
+                  name={"Luke Simon"}
+                  text={"Chef"}
+                />
               </Col>
             </Row>
           </section>
         </Container>
+
+        {/* Form */}
+                  <Form/>
       </main>
     </>
   );
