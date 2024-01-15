@@ -31,24 +31,31 @@ function FormComp() {
             <Form.Group as={Col} controlId="formGridPhone">
               <Form.Label>Phone</Form.Label>
               <Form.Control placeholder='+234-810-029-3828'/>
-            </Form.Group>
-
-           
+            </Form.Group>           
           </Row>
 
           <Row className='mb-3'>
+          <Form.Group as={Col} controlId="formGridPhone">
+              <Form.Label>Time</Form.Label>
+              <Form.Control placeholder='e.g: 6:00pm'/>
+            </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
-              <Form.Label>Person</Form.Label>
+              <Form.Label>Number Of Person(s)</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
-                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
               </Form.Select>
             </Form.Group>
           </Row>
           
            
-          <Button variant="primary" type="submit">
-            Submit
+          <Button variant="primary" className="float-end text-center rounded-1 " type="submit">
+           Make a Reseravation
           </Button>
         </Form>
       </div>
