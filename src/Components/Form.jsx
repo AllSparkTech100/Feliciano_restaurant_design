@@ -1,7 +1,7 @@
 import "./button.scss";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container, Form, Button } from "react-bootstrap";
 
-function Form() {
+function FormComp() {
   return (
     <Container className="bg-image conta px-0 py-5 p-md-5" fluid>
       <div className="form-carrier w-50 h-100">
@@ -11,21 +11,49 @@ function Form() {
             <h2 className="fw-bold">Make a Reservation</h2>
           </Col>
         </div>
-        <form>
-          <Row className="">
-            <Col sm={12} md={6} className="mb-3 ms-3 d-flex flex-column ">
-              <label htmlFor="">Name</label>
-              <input type="text" />
-            </Col>
-            <Col sm={12} md={6} className="mb-3 ms-3 d-flex flex-column ">
-              <label htmlFor="">Name</label>
-              <input type="text" />
-            </Col>
+        <Form className="p-3">
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="name" placeholder="Your Name" />
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Your Email" />
+            </Form.Group>
           </Row>
-        </form>
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridPhone">
+              <Form.Label>Phone</Form.Label>
+              <Form.Control placeholder='+234-810-029-3828'/>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridPhone">
+              <Form.Label>Phone</Form.Label>
+              <Form.Control placeholder='+234-810-029-3828'/>
+            </Form.Group>
+
+           
+          </Row>
+
+          <Row className='mb-3'>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Label>Person</Form.Label>
+              <Form.Select defaultValue="Choose...">
+                <option>Choose...</option>
+                <option></option>
+              </Form.Select>
+            </Form.Group>
+          </Row>
+          
+           
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
       </div>
     </Container>
   );
 }
 
-export default Form;
+export default FormComp;
