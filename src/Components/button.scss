@@ -16,14 +16,15 @@ img {
   // padding: 5rem;
 
   .form-carrier {
-    background-color: #000;
-    // min-height: 100vh;
+    background-color: #fff;
+    font-family: $font;
+    min-height: 85vh;
+    width: 50%;
     .head {
       h4 {
         font-family: $fontFamily;
         font-size: 75px;
         color: $present;
-
         position: relative;
         top: 70px;
         bottom: 0;
@@ -47,7 +48,10 @@ Card {
   }
 
   .conta {
+    padding: 3rem;
     .form-carrier {
+      width: 80%;
+     margin-left: 3rem;
       .head {
         h4 {
           font-family: $fontFamily;
