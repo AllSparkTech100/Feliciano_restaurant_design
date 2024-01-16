@@ -11,7 +11,7 @@ function FormComp() {
             <h2 className="fw-bold">Make a Reservation</h2>
           </Col>
         </div>
-        <Form className="p-3">
+        <Form className="p-3 main_form">
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridName">
               <Form.Label className='fw-bold'>Name</Form.Label>
@@ -56,12 +56,14 @@ rounded-1' placeholder='e.g: 6:00pm'/>
                 <option>6</option>
               </Form.Select>
             </Form.Group>
-          </Row>
-          
-           
-          <Button variant="primary" className="text-center border-0 mt-3 rounded-1 " type="submit">
+          </Row> 
+         
+         <div className="submit_form ">
+           <Button variant="primary" className="d-grid col-5  mx-auto text-center border-0 mt-3 rounded-1 " type="submit">
            Make a Reseravation
           </Button>
+         </div>
+         
         </Form>
       </div>
     </Container>

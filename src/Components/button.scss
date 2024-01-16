@@ -20,11 +20,17 @@ img {
     font-family: $font;
     min-height: 85vh;
     width: 50%;
+    .main_form {
+      .submit_form{
+        margin-top: 3rem;
+      }
+    }
     .head {
       h4 {
         font-family: $fontFamily;
         font-size: 75px;
         color: $present;
+        z-index:-20;
         position: relative;
         top: 70px;
         bottom: 0;
@@ -32,16 +38,17 @@ img {
         right: 0;
       }
       h2 {
+        z-index: 999;
         font-size: 45px;
         font-family: $font;
       }
-    }
   }
 }
 
 Card {
   font-family: $font;
 }
+
 @media screen and (max-width: 480px) {
   .btn {
     padding: 0.5rem 1rem;
@@ -51,7 +58,6 @@ Card {
     padding: 3rem;
     .form-carrier {
       width: 80%;
-     margin-left: 3rem;
       .head {
         h4 {
           font-family: $fontFamily;
@@ -67,4 +73,5 @@ Card {
       }
     }
   }
+}
 }
