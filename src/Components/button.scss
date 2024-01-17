@@ -54,9 +54,10 @@ Card {
   }
 
   .conta {
-    padding: 3rem;
+    // padding: 3rem;
     .form-carrier {
       width: 80%;
+      display: none;
       .head {
         h4 {
           font-family: $fontFamily;

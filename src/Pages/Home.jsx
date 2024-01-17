@@ -173,7 +173,7 @@ function Home() {
               <h2 className="fw-bold">Our Master Chef</h2>
             </Col>
             <Row id="imges">
-              <Col md={3} sm={12}>
+              <Col md={3} sm={12} xs={12}>
                 <ImgCard
                   imgUrl={chef}
                   name={"John Smooth"}
@@ -215,7 +215,7 @@ function Home() {
         <Form />
 
         {/* Testimony */}
-        <Container>
+        <Container className="testimony">
           <Col sm={12} md={12} className="text-center head">
               <h4>Testimony</h4>
               <h2 className="fw-bold">Happy Customers</h2>
