@@ -212,10 +212,15 @@ function Home() {
         </Container>
 
         {/* Form */}
-                  <Form/>
+        <Form />
 
-                  {/* Testimony */}
-                  
+        {/* Testimony */}
+        <Container>
+          <Col sm={12} md={12} className="text-center head">
+              <h4>Testimony</h4>
+              <h2 className="fw-bold">Happy Customers</h2>
+            </Col>
+        </Container>
       </main>
     </>
   );
