@@ -15,24 +15,15 @@ function FormComp() {
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridName">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="dxemail" />
+          <Form.Control type="text" placeholder="Name" />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="email" />
         </Form.Group>
       </Row>
 
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formGridAddress2">
-        <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
-      </Form.Group>
 
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
