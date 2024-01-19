@@ -3,7 +3,7 @@ import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
-import Form from "../Components/Form";
+import FormComp from "../Components/Form";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
@@ -212,18 +212,19 @@ function Home() {
         </Container>
 
         {/* Form */}
-        <Container fluid>
-          <div className="bg-image form_bg">
-          </div>
+        <Container fluidclassName="bg-image form_bg">
+        <div>
+        <FormComp/>
+        </div>
         </Container>
 
         {/* Testimony */}
-        <Container className="testimony">
+        {/* <Container className="testimony">
           <Col sm={12} md={12} className="text-center head">
             <h4>Testimony</h4>
             <h2 className="fw-bold">Happy Customers</h2>
           </Col>
-        </Container>
+        </Container> */}
       </main>
     </>
   );

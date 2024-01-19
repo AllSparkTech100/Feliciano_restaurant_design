@@ -5,7 +5,13 @@ function FormComp() {
   return (
     <>
 
-      <Form>
+  <div className="form_carrier">
+  <div className="form-intro">
+    <h4>Book a Table</h4>
+    <h5>Make a Reservation</h5>
+  </div>
+  <div className="main_form">
+     <Form>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
@@ -41,21 +47,14 @@ function FormComp() {
             <option>...</option>
           </Form.Select>
         </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridZip">
-          <Form.Label>Zip</Form.Label>
-          <Form.Control />
-        </Form.Group>
       </Row>
-
-      <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
 
       <Button variant="primary" type="submit">
         Submit
       </Button>
       </Form>
+     </div>
+  </div>
     </>
   );
 }
