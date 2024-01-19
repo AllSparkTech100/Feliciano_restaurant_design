@@ -1,4 +1,4 @@
-/* eslint-disablh4dfzxe react/prop-types */
+/* eslint-disable react/prop-types */
 import "./button.scss";
 
 function ButtonComp (props){

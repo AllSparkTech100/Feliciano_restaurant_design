@@ -1,72 +1,62 @@
 import "./button.scss";
-import { Col, Row, Container, Form, Button } from "react-bootstrap";
+import { Col,Row, Form, Button } from "react-bootstrap";
 
 function FormComp() {
   return (
-    <Container className="bg-image conta px-0 py-5 p-md-5" fluid>
-      <div className="form-carrier h-100">
-        <div className="head">
-          <Col className="text-center">
-            <h4>Book a Table</h4>
-            <h2 className="fw-bold">Make a Reservation</h2>
-          </Col>
-        </div>
-        <Form className="p-3 main_form">
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridName">
-              <Form.Label className='fw-bold'>Name</Form.Label>
-              <Form.Control className='border-1 shadow-none 
-rounded-1' type="name" placeholder="Your Name" />
-            </Form.Group>
+    <>
 
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label className='fw-bold'>Email</Form.Label>
-              <Form.Control className='border-1 shadow-none 
-rounded-1' type="email" placeholder="Your Email" />
-            </Form.Group>
-          </Row>
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridPhone">
-              <Form.Label className='fw-bold'>Phone</Form.Label>
-              <Form.Control className='border-1 shadow-none 
-rounded-1' placeholder='+234-810-029-3828'/>
-            </Form.Group>
-            <Form.Group as={Col} controlId="formGridPhone">
-              <Form.Label className='fw-bold'>Phone</Form.Label>
-              <Form.Control className='border-1 shadow-none 
-rounded-1' placeholder='+234-810-029-3828'/>
-            </Form.Group>           
-          </Row>
+      <Form>
+      <Row className="mb-3">
+        <Form.Group as={Col} controlId="formGridEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
 
-          <Row className='mb-3'>
-          <Form.Group as={Col} controlId="formGridPhone">
-              <Form.Label className='fw-bold'>Time</Form.Label>
-              <Form.Control className='border-1 shadow-none 
-rounded-1' placeholder='e.g: 6:00pm'/>
-            </Form.Group>
-            <Form.Group as={Col} controlId="formGridState">
-              <Form.Label className='fw-bold'>Person(s)</Form.Label>
-              <Form.Select defaultValue="Choose...">
-                <option>Choose...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-              </Form.Select>
-            </Form.Group>
-          </Row> 
-         
-         <div className="submit_form ">
-           <Button variant="primary" className="d-grid col-5  mx-auto text-center border-0 mt-3 rounded-1 " type="submit">
-           Make a Reseravation
-          </Button>
-         </div>
-         
-        </Form>
-      </div>
-    </Container>
+        <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
+      </Row>
+
+      <Form.Group className="mb-3" controlId="formGridAddress1">
+        <Form.Label>Address</Form.Label>
+        <Form.Control placeholder="1234 Main St" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formGridAddress2">
+        <Form.Label>Address 2</Form.Label>
+        <Form.Control placeholder="Apartment, studio, or floor" />
+      </Form.Group>
+
+      <Row className="mb-3">
+        <Form.Group as={Col} controlId="formGridCity">
+          <Form.Label>City</Form.Label>
+          <Form.Control />
+        </Form.Group>
+
+        <Form.Group as={Col} controlId="formGridState">
+          <Form.Label>State</Form.Label>
+          <Form.Select defaultValue="Choose...">
+            <option>Choose...</option>
+            <option>...</option>
+          </Form.Select>
+        </Form.Group>
+
+        <Form.Group as={Col} controlId="formGridZip">
+          <Form.Label>Zip</Form.Label>
+          <Form.Control />
+        </Form.Group>
+      </Row>
+
+      <Form.Group className="mb-3" id="formGridCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+      </Form>
+    </>
   );
 }
 

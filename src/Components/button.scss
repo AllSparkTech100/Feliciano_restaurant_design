@@ -10,40 +10,6 @@ img {
   letter-spacing: 10px;
 }
 
-.conta {
-  margin-top: 10rem;
-  background-image: url("https://blog.pricepally.com/wp-content/uploads/2023/04/Artboard-2-2.jpg");
-  // padding: 5rem;
-
-  .form-carrier {
-    background-color: #fff;
-    font-family: $font;
-    min-height: 85vh;
-    width: 50%;
-    .main_form {
-      .submit_form{
-        margin-top: 3rem;
-      }
-    }
-    .head {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 75px;
-        color: $present;
-        position: relative;
-        top: 70px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      h2 {
-        z-index: 999;
-        font-size: 45px;
-        font-family: $font;
-      }
-  }
-}
-
 Card {
   font-family: $font;
 }
@@ -52,25 +18,4 @@ Card {
   .btn {
     padding: 0.5rem 1rem;
   }
-
-  .conta {
-    // padding: 3rem;
-    .form-carrier {
-      width: 80%;
-      .head {
-        h4 {
-          font-family: $fontFamily;
-          font-size: 40px;
-          color: $present;
-          top: 35px;
-        }
-        h2 {
-          z-index: 12;
-          font-size: 25px;
-          font-family: $font;
-        }
-      }
-    }
-  }
-}
 }
