@@ -44,7 +44,6 @@ $fontFamily: "Great Vibes", cursive;
 
 .form_carrier {
   background: $pure;
-  padding: 1rem;
   width: 50%;
   margin: 5rem 0 4rem 0;
   .form-intro {
@@ -52,13 +51,49 @@ $fontFamily: "Great Vibes", cursive;
     text-align: center;
     h4 {
       font-family: $fontFamily;
-      font-size: 2rem;
+      font-size: 6rem;
+      color: $present;
       position: relative;
-      top: -3rem;
+      top: -2rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
+
+    .intro_inner {
+      position: relative;
+      top: -4rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      h5 {
+        position: relative;
+        top: -2rem;
+        font-family: $font;
+        font-size: 3rem;
+      }
     }
   }
-  .main_form{
+  .main_form {
+    padding: 3rem;
     font-family: $font;
-    margin-top: 2rem;
+    margin-top: -6rem;
+    label{
+      font-weight: bold;
+    }
+    input {
+      &:focus {
+        border: 1px solid black;
+      }
+    }
+    .form_btn{
+     @include flex;
+     margin-top: 2rem;
+     .btn-sub{
+      padding: 1rem 4rem;
+     }
+    }
   }
 }
