@@ -11,7 +11,7 @@ import {
 function ImgCard(props) {
   return (
     <div>
-      <Card className='px-3' rounded-4  style={{height:'80vh', width: '20rem', border:'none'}}>
+      <Card className='px-1 w-auto mt-5' rounded-4  style={{height:'80vh', border:'none'}}>
         <Card.Img variant="top"  src={props.imgUrl} className='h-100 object-fit-cover' />
         <Card.Body>
           <Card.Title className='fw-bold fs-6'>{props.name}</Card.Title>

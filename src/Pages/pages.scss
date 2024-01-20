@@ -131,9 +131,24 @@ main {
   }
 
   .form_bg{
-    background-image: url('https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg');
+    background: url('https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg');
+    margin-top: 10rem;
+    box-sizing: border-box;
 
   }
+}
+
+@media screen and (min-width:576px){
+.rest_info{
+  .tp{
+    h6{
+      font-size: 2rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+  }
+}
 }
 
 @media screen and (max-width: 480px) {

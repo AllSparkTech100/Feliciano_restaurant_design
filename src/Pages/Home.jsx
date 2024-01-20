@@ -173,7 +173,7 @@ function Home() {
               <h2 className="fw-bold">Our Master Chef</h2>
             </Col>
             <Row id="imges">
-              <Col md={3} sm={12} xs={12}>
+              <Col md={3} sm={12}>
                 <ImgCard
                   imgUrl={chef}
                   name={"John Smooth"}
@@ -212,7 +212,7 @@ function Home() {
         </Container>
 
         {/* Form */}
-        <Container fluidclassName="bg-image form_bg">
+        <Container fluid className="bg-image form_bg p-5">
         <div>
         <FormComp/>
         </div>
