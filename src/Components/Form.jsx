@@ -38,13 +38,13 @@ function FormComp() {
               <Form.Group as={Col} controlId="formGridPhone">
                 <Form.Label>Phone</Form.Label>
                 <Form.Control
-                  type="number"
+                  type="tel"
                   className="shadow-none rounded-0 p-3"
-                  placeholder="Phone"
+                  placeholder="Phone" maxLength={20}
                 />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} controlId="formGridDate">
                 <Form.Label>Date</Form.Label>
                 <Form.Control
                   type="date"
