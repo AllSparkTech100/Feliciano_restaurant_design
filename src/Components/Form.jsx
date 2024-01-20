@@ -29,7 +29,7 @@ function FormComp() {
                 <Form.Control
                   type="email"
                   className="shadow-none rounded-0 p-3"
-                  placeholder="email"
+                  placeholder="Email" required
                 />
               </Form.Group>
             </Row>
@@ -38,7 +38,7 @@ function FormComp() {
               <Form.Group as={Col} controlId="formGridPhone">
                 <Form.Label>Phone</Form.Label>
                 <Form.Control
-                  type="text"
+                  type="number"
                   className="shadow-none rounded-0 p-3"
                   placeholder="Phone"
                 />
@@ -49,7 +49,6 @@ function FormComp() {
                 <Form.Control
                   type="date"
                   className="shadow-none rounded-0 p-3"
-                  placeholder="date"
                 />
               </Form.Group>
             </Row>
@@ -61,7 +60,6 @@ function FormComp() {
                 <Form.Control
                   type="time"
                   className="shadow-none rounded-0 p-3"
-                  placeholder="time"
                 />
               </Form.Group>
 
