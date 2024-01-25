@@ -4,11 +4,13 @@ import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Card, CardGroup } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
 import chef from "../Photos/chef-1.jpg";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 function Home() {
   return (
@@ -213,18 +215,88 @@ function Home() {
 
         {/* Form */}
         <Container fluid className="bg-image form_bg p-5">
-        <div>
-        <FormComp/>
-        </div>
+          <div>
+            <FormComp />
+          </div>
         </Container>
 
         {/* Testimony */}
-        {/* <Container className="testimony">
-          <Col sm={12} md={12} className="text-center head">
+        <Container className="testimony">
+          <Col sm={12} md={12} className="text-center info">
             <h4>Testimony</h4>
-            <h2 className="fw-bold">Happy Customers</h2>
+            <div className="info_inner">
+              <h2 className="fw-bold">Happy Customers</h2>
+            </div>
           </Col>
-        </Container> */}
+          <Splide
+            options={{
+              perPage: 4,
+              arrows: false,
+              pagination: false,
+              drag: `free`,
+              gap: "2rem",
+            }}
+          >
+            <SplideSlide></SplideSlide>
+          </Splide>
+        </Container>
+
+        {/* Blog */}
+        <Container fluid>
+          <div className="blog">
+            <Col sm={12} md={12} className="text-center info">
+              <h4>Blog</h4>
+              <div className="info_inner">
+                <h2 className="fw-bold">Recent Post</h2>
+              </div>
+            </Col>
+            <Container>
+
+    <CardGroup>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+    </CardGroup>
+    </Container>
+          </div>
+        </Container>
       </main>
     </>
   );

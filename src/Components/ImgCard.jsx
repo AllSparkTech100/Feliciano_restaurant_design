@@ -17,8 +17,9 @@ function ImgCard(props) {
           <Card.Title className='fw-bold fs-6'>{props.name}</Card.Title>
           <Card.Text style={{color: "#787878"}} className=''>{props.text}</Card.Text>
           <div className="socials">
-            <FaTwitter size={20} /> <FaFacebookF size={20}/> <FaGooglePlusG size={20}/> <FaInstagram size={20}/>
-          </div>
+                  <FaTwitter size={20} /> <FaFacebookF size={20} />
+                  <FaGooglePlusG size={20} /> <FaInstagram size={20} />
+                </div>
         </Card.Body>
       </Card>
     </div>
