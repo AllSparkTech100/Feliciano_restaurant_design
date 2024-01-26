@@ -4,10 +4,15 @@ import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
-import { Container, Row, Col, Image, Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
+import bar2 from "../Photos/bar-2.jpg";
+import bar1 from "../Photos/wineee.jpg";
+import wine from "../Photos/wines.jpg";
+// import foods from '../Photos/food-1.jpg'
+// import food from '../Photos/food-2.jpeg'
 import chef from "../Photos/chef-1.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -251,50 +256,51 @@ function Home() {
               </div>
             </Col>
             <Container>
-
-    <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
-    </Container>
+              <Row>
+                <Col md={4} sm={12}>
+                  <Card className="shadow-none border-0">
+                    <Card.Img variant="top" className="img fluid h-50" src={wine} />
+                    <Card.Body>
+                      <Card.Text style={{ color: "#787878" }}>
+                        Sept. 06 2019 Admin
+                      </Card.Text>
+                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
+                    </Card.Body>
+                    <Card.Footer className="border-0">
+                      <small className="text-muted">Read More</small>
+                    </Card.Footer>
+                  </Card>
+                </Col>
+                <Col md={4} sm={12}>
+                  <Card className="shadow-none border-0">
+                    <Card.Img variant="top" className="h-auto img fluid" src={bar2} />
+                    <Card.Body>
+                      <Card.Text style={{ color: "#787878" }}>
+                        Sept. 06 2019 Admin
+                      </Card.Text>
+                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
+                    </Card.Body>
+                    <Card.Footer className="border-0">
+                      <small className="text-muted">Read More</small>
+                    </Card.Footer>
+                  </Card>
+                </Col>
+                <Col md={4} sm={12}>
+                  <Card className="shadow-none border-0">
+                    <Card.Img variant="top" className="h-50 img fluid" src={bar1} />
+                    <Card.Body>
+                      <Card.Text style={{ color: "#787878" }}>
+                        Sept. 06 2019 Admin
+                      </Card.Text>
+                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
+                    </Card.Body>
+                    <Card.Footer className="border-0">
+                      <small className="text-muted">Read More</small>
+                    </Card.Footer>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
           </div>
         </Container>
       </main>
