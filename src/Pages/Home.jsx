@@ -173,7 +173,7 @@ function Home() {
         </Container>
 
         {/* Chefs */}
-        <Container>
+        <Container fluid className="chef" >
           <section className="chef">
             <Col sm={12} md={12} className="text-center head">
               <h4>Chef</h4>
@@ -257,7 +257,7 @@ function Home() {
             </Col>
             <Container>
               <Row>
-                <Col md={4} sm={12}>
+                <Col md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img variant="top" className="img fluid h-50" src={wine} />
                     <Card.Body>
@@ -271,7 +271,7 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col md={4} sm={12}>
+                <Col md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img variant="top" className="h-auto img fluid" src={bar2} />
                     <Card.Body>
@@ -285,9 +285,9 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col md={4} sm={12}>
-                  <Card className="shadow-none border-0">
-                    <Card.Img variant="top" className="h-50 img fluid" src={bar1} />
+                <Col md={4} sm={12} className="mt-5">
+                  <Card className="shadow-none border-0 h-100">
+                    <Card.Img variant="top" className="h-75 img fluid" src={bar1} />
                     <Card.Body>
                       <Card.Text style={{ color: "#787878" }}>
                         Sept. 06 2019 Admin
