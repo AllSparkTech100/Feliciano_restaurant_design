@@ -10,6 +10,27 @@ img {
   letter-spacing: 10px;
 }
 
+.footer_carrier{
+  background: $foot;
+  .circle_socials{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .circle_content{
+      margin-right: 10px;
+      padding: 10px;
+      // height: 30px;
+      // width:30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $socials;
+    }
+  }
+}
+
 .btn_sub{
   // padding: .9rem 6rem;
   background-color: red;
