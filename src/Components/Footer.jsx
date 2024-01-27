@@ -31,13 +31,11 @@ function Footer() {
               </div>
             </Col>
             <Col md={3} sm={6}>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
+            <h4 className="mb-4 fw-bold text-white">Open Hours</h4>
+            <div className="hours text-white-50 ">
+            <p>Monday &nbsp; 09:00 - 24:00 </p>
+            </div>
+           
             </Col>
 
             <Col md={3} sm={6}>
