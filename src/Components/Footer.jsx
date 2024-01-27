@@ -34,6 +34,11 @@ function Footer() {
             <h4 className="mb-4 fw-bold text-white">Open Hours</h4>
             <div className="hours text-white-50 ">
             <p>Monday &nbsp; 09:00 - 24:00 </p>
+            <p>Tuesday &nbsp; 09:00 - 24:00 </p>
+            <p>Wednesday &nbsp; 09:00 - 24:00 </p>
+            <p>Thursday &nbsp; 09:00 - 24:00 </p>
+            <p>Friday &nbsp; 09:00 - 24:00 </p>
+            <p>Saturday &nbsp; 09:00 - 24:00 </p>
             </div>
            
             </Col>
