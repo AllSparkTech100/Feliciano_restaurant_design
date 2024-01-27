@@ -1,6 +1,13 @@
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import './button.scss'
-
+import { Link } from "react-router-dom";
+import {
+  FaTwitter,
+  FaGooglePlusG,
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa";
+  
 function Footer() {
   return (
     <div>
@@ -8,13 +15,17 @@ function Footer() {
         <Container className="mt-5 p-5 text-white">
           <Row>
             <Col md={3} sm={6}>
+              <h4 className="fs-1 fw-bold text-white">Feliciano</h4>
               <h4>Working Hours</h4>
               <h4>Working Hours</h4>
               <h4>Working Hours</h4>
               <h4>Working Hours</h4>
               <h4>Working Hours</h4>
               <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
+              <div className="socials">
+                  <FaTwitter size={20} /> <FaFacebookF size={20} />
+                  <FaGooglePlusG size={20} /> <FaInstagram size={20} />
+                </div>
             </Col>
             <Col md={3} sm={6}>
               <h4>Working Hours</h4>
@@ -40,7 +51,7 @@ function Footer() {
                 <Form.Group controlId="formGridEmail">
                   <Form.Control
                     type="email"
-                    className="shadow-none rounded-0 p-3"
+                    className="shadow-none rounded-0 p-2"
                     placeholder="Email"
                     required
                   />
