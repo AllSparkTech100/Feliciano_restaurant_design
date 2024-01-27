@@ -14,11 +14,9 @@ function Footer() {
         <Container className="mt-5 p-5 text-white">
           <Row>
             <Col md={3} sm={6}>
-              <h4 className="fs-1 mb-4 fw-bold text-white">Feliciano</h4>
-              <div className="mb-4 text-muted fw-medium">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium blanditiis qui saepe omnis adipisci libero soluta
-                  odio. Rem modi delectus, maiores illum cum in!
+              <h4 className="mb-4 fw-bold text-white">Feliciano</h4>
+              <div className="mb-4 text-white-50 foot_intro fw-medium">
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
               <div className="circle_socials">
                 <div className="circle_content">
@@ -31,15 +29,6 @@ function Footer() {
                   <FaInstagram size={20} />
                 </div>
               </div>
-            </Col>
-            <Col md={3} sm={6}>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
-              <h4>Working Hours</h4>
             </Col>
             <Col md={3} sm={6}>
               <h4>Working Hours</h4>

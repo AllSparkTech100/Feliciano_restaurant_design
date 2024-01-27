@@ -12,6 +12,12 @@ img {
 
 .footer_carrier{
   background: $foot;
+  font-family: $font;
+  .foot_intro{
+    p{
+      font-size: 1rem;
+    }
+  }
   .circle_socials{
     width: 65%;
     display: flex;
@@ -29,13 +35,14 @@ img {
       background-color: $socials;
     }
   }
+  .btn_sub{
+    // padding: .9rem 6rem;
+    background-color: red;
+    width: 100%;
+  }
 }
 
-.btn_sub{
-  // padding: .9rem 6rem;
-  background-color: red;
-  width: 100%;
-}
+
 
 Card {
   font-family: $font;
