@@ -1,5 +1,6 @@
 import "./pages.scss";
 import ImgCard from "../Components/ImgCard";
+// import Badge from './bootstrap'
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
@@ -14,8 +15,8 @@ import wine from "../Photos/wines.jpg";
 // import foods from '../Photos/food-1.jpg'
 // import food from '../Photos/food-2.jpeg'
 import chef from "../Photos/chef-1.jpg";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+// import { Splide, SplideSlide } from "@splidejs/react-splide";
+// import "@splidejs/react-splide/css";
 
 function Home() {
   return (
@@ -173,52 +174,52 @@ function Home() {
         </Container>
 
         {/* Chefs */}
-        <Container fluid className="chef" >
-          <section className="chef">
-            <Col sm={12} md={12} className="text-center head">
-              <h4>Chef</h4>
-              <h2 className="fw-bold">Our Master Chef</h2>
-            </Col>
-            <Row id="imges">
-              <Col md={3} sm={12}>
-                <ImgCard
-                  imgUrl={chef}
-                  name={"John Smooth"}
-                  text={"Restaurant Owner"}
-                />
+        <Container fluid>
+          <Container>
+            <section className="chef">
+              <Col sm={12} md={12} className="text-center head">
+                <h4>Chef</h4>
+                <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
-              <Col md={3} sm={12}>
-                <ImgCard
-                  imgUrl={
-                    "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
-                  }
-                  name={"Rebecca Welson"}
-                  text={"Head Chef"}
-                />
-              </Col>
-              <Col md={3} sm={12}>
-                <ImgCard
-                  imgUrl={
-                    "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
-                  }
-                  name={"Kharl Bryant"}
-                  text={"Chef"}
-                />
-              </Col>
-              <Col md={3} sm={12}>
-                <ImgCard
-                  imgUrl={
-                    "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
-                  }
-                  name={"Luke Simon"}
-                  text={"Chef"}
-                />
-              </Col>
-            </Row>
-          </section>
+              <Row id="imges">
+                <Col md={3} sm={12}>
+                  <ImgCard
+                    imgUrl={chef}
+                    name={"John Smooth"}
+                    text={"Restaurant Owner"}
+                  />
+                </Col>
+                <Col md={3} sm={12}>
+                  <ImgCard
+                    imgUrl={
+                      "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
+                    }
+                    name={"Rebecca Welson"}
+                    text={"Head Chef"}
+                  />
+                </Col>
+                <Col md={3} sm={12}>
+                  <ImgCard
+                    imgUrl={
+                      "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
+                    }
+                    name={"Kharl Bryant"}
+                    text={"Chef"}
+                  />
+                </Col>
+                <Col md={3} sm={12}>
+                  <ImgCard
+                    imgUrl={
+                      "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
+                    }
+                    name={"Luke Simon"}
+                    text={"Chef"}
+                  />
+                </Col>
+              </Row>
+            </section>
+          </Container>
         </Container>
-
-        {/* Form */}
         <Container fluid className="bg-image form_bg p-5">
           <div>
             <FormComp />
@@ -226,7 +227,7 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-        <Container className="testimony">
+        {/* <Container className="testimony">
           <Col sm={12} md={12} className="text-center info">
             <h4>Testimony</h4>
             <div className="info_inner">
@@ -244,7 +245,7 @@ function Home() {
           >
             <SplideSlide></SplideSlide>
           </Splide>
-        </Container>
+        </Container> */}
 
         {/* Blog */}
         <Container fluid>
@@ -259,7 +260,11 @@ function Home() {
               <Row>
                 <Col md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
-                    <Card.Img variant="top" className="img fluid h-50" src={wine} />
+                    <Card.Img
+                      variant="top"
+                      className="img fluid h-50"
+                      src={wine}
+                    />
                     <Card.Body>
                       <Card.Text style={{ color: "#787878" }}>
                         Sept. 06 2019 Admin
@@ -273,7 +278,11 @@ function Home() {
                 </Col>
                 <Col md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
-                    <Card.Img variant="top" className="h-auto img fluid" src={bar2} />
+                    <Card.Img
+                      variant="top"
+                      className="h-auto img-fluid"
+                      src={bar2}
+                    />
                     <Card.Body>
                       <Card.Text style={{ color: "#787878" }}>
                         Sept. 06 2019 Admin
@@ -287,7 +296,11 @@ function Home() {
                 </Col>
                 <Col md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0 h-100">
-                    <Card.Img variant="top" className="h-75 img fluid" src={bar1} />
+                    <Card.Img
+                      variant="top"
+                      className="h-75 img fluid"
+                      src={bar1}
+                    />
                     <Card.Body>
                       <Card.Text style={{ color: "#787878" }}>
                         Sept. 06 2019 Admin

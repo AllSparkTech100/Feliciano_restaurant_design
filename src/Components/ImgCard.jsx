@@ -11,14 +11,14 @@ import {
 function ImgCard(props) {
   return (
     <div>
-      <Card className='px-1 w-auto mt-5' rounded-4  style={{height:'80vh', border:'none'}}>
-        <Card.Img variant="top"  src={props.imgUrl} className='h-100 object-fit-cover' />
+      <Card className='mt-5' rounded-4  style={{height:'80vh', border:'none'}}>
+        <Card.Img variant="top"  src={props.imgUrl} className='h-100 img-fluid object-fit-cover' />
         <Card.Body>
           <Card.Title className='fw-bold fs-6'>{props.name}</Card.Title>
           <Card.Text style={{color: "#787878"}} className=''>{props.text}</Card.Text>
           <div className="socials">
-                  <FaTwitter size={20} /> <FaFacebookF size={20} />
-                  <FaGooglePlusG size={20} /> <FaInstagram size={20} />
+                  <FaTwitter size={20} /> <FaFacebookF size={20} />&nbsp;
+                  <FaGooglePlusG size={20} />  <FaInstagram size={20} />
                 </div>
         </Card.Body>
       </Card>
