@@ -1,5 +1,4 @@
 import "./pages.scss";
-// import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";

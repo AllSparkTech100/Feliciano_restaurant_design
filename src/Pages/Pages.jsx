@@ -5,7 +5,7 @@ import Stories from "./Stories";
 import Contact from "./Contact";
 import styled from "styled-components";
 import Error from "./Error";
-import Breakfast from "./breakfast";
+import Breakfast from "./Breakfast";
 import Dessert from "./Desserts";
 import Lunch from "./Lunch";
 import Dinner from "./Dinner";
@@ -17,22 +17,23 @@ import { AnimatePresence } from "framer-motion";
 function Pages() {
   return (
     <Main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/stories" element={<Stories />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-        <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+
           <Route path="/breakfast" element={<Breakfast />} />
           <Route path="/lunch" element={<Lunch />} />
           <Route path="/desserts" element={<Dessert />} />
           <Route path="/dinner" element={<Dinner />} />
           <Route path="/wines" element={<Wines />} />
           <Route path="/drinks" element={<Drinks />} />
-        </AnimatePresence>
-      </Routes>
+        </Routes>
+      </AnimatePresence>
     </Main>
   );
 }
