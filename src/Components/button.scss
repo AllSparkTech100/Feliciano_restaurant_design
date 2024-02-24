@@ -10,9 +10,13 @@ img {
   letter-spacing: 10px;
 }
 
+.carrier_in{
+ text-align: center;
+}
 .footer_carrier {
   background: $foot;
   font-family: $font;
+  margin-top: 19rem;
   .foot_intro {
     p {
       font-size: 1rem;
@@ -38,9 +42,15 @@ img {
 
   .sub_form {
     text-align: center;
-    input{
-      background: #2C2B2B;
+    input {
+      background: #2c2b2b;
       color: $pure;
+      &::-webkit-input-placeholder {
+        color: $pure;
+      }
+      &:-moz-placeholder {
+        color: $pure;
+      }
     }
     .sub_btn {
       .btn_sub {
@@ -50,6 +60,9 @@ img {
       }
     }
   }
+  .outro {
+    font-size: 0.8rem;
+  }
 }
 
 Card {
@@ -57,6 +70,13 @@ Card {
 }
 
 @media screen and (max-width: 480px) {
+  .captions{
+    .trust{
+      p{
+        color: $pure;
+      }
+    }
+  }
   .btn {
     padding: 0.5rem 1rem;
   }

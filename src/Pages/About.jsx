@@ -1,12 +1,8 @@
 import "./pages.scss";
-// import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
-import Slide from "../Components/Slide";
-import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
-import Data from "../Components/data";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
@@ -15,73 +11,25 @@ import bar1 from "../Photos/wineee.jpg";
 import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 
-function Home() {
+function About() {
   return (
     <>
-      <main className="my-5">
-        <div className="absolutes">
-          <Slide />
+      <main className="">
+        <div className="bg-image about_intro">
+          <div className="about_text">
+            <h3 className="text-white text-center">About</h3>
+            <p className="text-center">
+              <a href="/" className="text-white fw-normal">
+                Home
+              </a>
+            </p>
+          </div>
         </div>
-        {/* First Line */}
-        <Container fluid className="grill d-block">
-          <Row className="m-md-0 mt-3">
-            <Col sm={3} md={3} className="m-md-0 mb-4 good">
-              <CircleImage
-                imageUrl={
-                  "https://www.eatingwell.com/thmb/ngkEIo8XHdZxLcmY-Se-yk3uGjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(959x678:961x680)/is-grilled-meat-bad-for-you-ba946756dae3432592d0b463941b1917.jpg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">Grilled Meat With Tomatoes</h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
-              <CircleImage
-                imageUrl={
-                  "https://hips.hearstapps.com/hmg-prod/images/delish-grilled-potatoes-jpg-1526061594.jpg?crop=1xw:0.9968354430379747xh;center,top"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">
-                  Grilled Potatoes With Tomatoes
-                </h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
-              <CircleImage
-                imageUrl={
-                  "https://img.taste.com.au/pQppG_f4/taste/2016/11/barbecued-japanese-rice-cakes-onigiri-110057-1.jpeg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">Grilled Rice With Tomatoes</h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="mb-4 good">
-              <CircleImage
-                imageUrl={
-                  "https://www.feastingathome.com/wp-content/uploads/2023/06/Grilled-Tomatoes-12.jpg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">
-                  Grilled Tomato With Tomatoes
-                </h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-
         {/* Info Sect */}
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
-           
-            <Col sm={6} md={7} lg={6} className="two_img mt-2">
+            <Col sm={6} md={7} xl={6} className="two_img mt-2">
               <Image
                 src={barr}
                 alt=""
@@ -89,7 +37,7 @@ function Home() {
                 rounded
               />
             </Col>
-            <Col sm={6} md={5} lg={6} className="tp">
+            <Col sm={6} md={5} xl={6} className="tp">
               <h6 className="fw-normal position-relative text-capitalize ">
                 about
               </h6>
@@ -161,16 +109,6 @@ function Home() {
               </Col>
             </Row>
           </section>
-
-          {/* Special Menu */}
-
-          <section id="menu">
-            <Col sm={12} md={12} className="text-center head">
-              <h4>Specialties</h4>
-              <h2 className="fw-bold">Our Menu</h2>
-            </Col>
-            <Data />
-          </section>
         </Container>
 
         {/* Chefs */}
@@ -227,6 +165,25 @@ function Home() {
         </Container>
 
         {/* Testimony */}
+        {/* <Container className="testimony">
+          <Col sm={12} md={12} className="text-center info">
+            <h4>Testimony</h4>
+            <div className="info_inner">
+              <h2 className="fw-bold">Happy Customers</h2>
+            </div>
+          </Col>
+          <Splide
+            options={{
+              perPage: 4,
+              arrows: false,
+              pagination: false,
+              drag: `free`,
+              gap: "2rem",
+            }}
+          >
+            <SplideSlide></SplideSlide>
+          </Splide>
+        </Container> */}
 
         {/* Blog */}
         <Container fluid>
@@ -301,5 +258,4 @@ function Home() {
     </>
   );
 }
-
-export default Home;
+export default About;

@@ -4,6 +4,14 @@ main {
     color: #787878;
   }
 
+  .absolutes {
+    margin: 0;
+    min-height: 40vh;
+    height: auto;
+    position: relative;
+    top: -50px;
+  }
+
   .good {
     @include flex;
     flex-direction: column;
@@ -12,39 +20,40 @@ main {
       text-align: center;
     }
   }
-
-  .rest_info {
-    .two_img {
-      img {
-        width: 20rem;
-        height: 20rem;
+  .rest_carrier {
+    .rest_info {
+      .two_img {
+        width: 40rem;
+        height: 33rem;
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
-    }
 
-   .tp{
-    position: relative;
-    top: -40px;
-    h6 {
-      font-family: $fontFamily;
-      color: $present;
-      top: 90px;
-      left: 3px;
-      z-index: -99;
-      font-size: 100px;
-      letter-spacing: 1rem;
-    }
-    h3 {
-      font-size: 70px;
-      font-family: $font;
-    }
-   }
-    p {
-      font-family: $font;
-    }
-
-    h4 {
-      color: $present;
-      font-family: $font;
+      .tp {
+        position: relative;
+        h6 {
+          font-family: $fontFamily;
+          color: $present;
+          top: 90px;
+          left: 3px;
+          z-index: -99;
+          font-size: 100px;
+          letter-spacing: 1rem;
+        }
+        h3 {
+          font-size: 70px;
+          font-family: $font;
+        }
+        p {
+          font-family: $font;
+        }
+        h4 {
+          color: $present;
+          font-family: $font;
+        }
+      }
     }
   }
 
@@ -108,7 +117,7 @@ main {
   }
 
   .chef {
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-family: $font;
     .head {
       h4 {
@@ -136,8 +145,8 @@ main {
   .form_bg {
     background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
     margin-top: 10rem;
-    box-sizing: border-box;
-    height: 120vh;
+    background-attachment: fixed;
+    background-position: center center;
   }
 
   .testimony {
@@ -151,7 +160,7 @@ main {
       .info_inner {
         position: relative;
         bottom: 5.8rem;
-        h2{
+        h2 {
           font-size: 4rem;
         }
       }
@@ -169,8 +178,109 @@ main {
       .info_inner {
         position: relative;
         bottom: 5.8rem;
-        h2{
+        h2 {
           font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .about_intro,
+  .menu_intro,
+  .contact_intro, .story_intro {
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    margin-bottom: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    isolation: isolate;
+    .about_text {
+      text-align: center;
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 65%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: $font;
+        z-index: -3;
+      }
+
+      p{
+        position: relative;
+        top: -40px;
+        bottom: 0;
+        right:0;
+        left: 0;
+       a{
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 2px;
+        text-underline-offset:4px;
+       }
+      }
+    }
+  }
+  .about_intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.552),
+        rgba(0, 0, 0, 0.665)
+      ),
+      url("../Photos/wineee.jpg");
+      background-position: top center;
+  }
+  .contact_intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.515),
+        rgba(0, 0, 0, 0.413)
+      ),
+      url("../Photos/bar-1.jpg");
+  }
+  .menu_intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.552),
+        rgba(0, 0, 0, 0.665)
+      ),
+      url("../Photos/food-2.jpeg");
+      background-color: #cccccc;
+  }
+  .story_intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.552),
+        rgba(0, 0, 0, 0.665)
+      ),
+      url("../Photos/wines.jpg");
+      background-position:center center;
+  }
+  .inner_info {
+    h2 {
+      font-weight: bold;
+      font-family: $font;
+    }
+  }
+  .first-contact-section {
+  margin-top: 5rem;
+    font-family: $font;
+  }
+  .last_carrier {
+    margin-top: 5rem;
+    .last-contact-section {
+      font-family: $font;
+      margin-top: 3rem;
+      p {
+        color: black;
+        display: flex;
+        align-items: center;
+        span {
+          a {
+            color: $present;
+          }
         }
       }
     }
@@ -190,36 +300,78 @@ main {
   }
 }
 
-@media screen and (max-width: 480px) {
-  main {
-    .rest_info {
-      h6 {
-        top: 60px;
-        font-size: 65px;
-      }
-      h3 {
-        font-size: 20px;
+@media screen and (max-width:1199.98px) {
+  .rest_carrier {
+      .rest_info {
+        .two_img {
+          height: 20rem;
+          // width: 50rem;
+          img {
+            width: 100%;
+          }
+        }
+        .tp {
+          top: -2rem;
+          :nth-of-type(1) {
+            top: 60px;
+            font-size: 5rem;
+            margin-bottom: 30px;
+          }
+          :nth-child(2) {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-wrap: nowrap;
+            position: relative;
+            top: -0.8rem;
+          }
+          :nth-child(3) {
+            text-align: justify;
+          }
+          :nth-child(4) {
+            font-size: 1.7rem;
+            span {
+              font-size: 2rem;
+            }
+          }
+        }
       }
     }
+}
+@media screen and (max-width: 480px) {
+  main {
+    // .rest_carrier{
+    //   .rest_info{
+    //     .tp{
+    //       h3{
+    //         font-size: 40px;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .stat {
+      margin-top: 2rem;
+    }
     #services {
+      margin-top: 3rem;
       .head {
         h4 {
-          top: 50px;
-          font-size: 66px;
+          top: 34px;
+          font-size: 3rem;
         }
         h2 {
-          font-size: 30px;
+          font-size: 1.4rem;
         }
       }
     }
     #menu {
       .head {
         h4 {
-          top: 50px;
-          font-size: 66px;
+          top: 35px;
+          font-size: 3rem;
         }
         h2 {
-          font-size: 30px;
+          font-size: 1.5rem;
         }
       }
     }
@@ -235,19 +387,61 @@ main {
         }
       }
     }
-  }
-}
-
-@media screen and (min-width: 576px) {
-  main {
-    .rest_info {
-      h6 {
-        font-size: 120px;
+    .blog {
+      .info {
+        h4 {
+          font-size: 5rem;
+        }
+        .info_inner {
+          bottom: 4.4rem;
+          h2 {
+            font-size: 3rem;
+          }
+        }
       }
+    }
 
-      //   h3 {
-      //     font-size: 45px;
-      //   }
+    .about_intro {
+      margin-bottom: 5rem;
+    }
+
+    .about_intro, .contact_intro, .menu_intro, .story_intro{
+      .about_text{ 
+        h3{
+          top: 63%;
+        }
+        p{
+          top: -20px;
+        }
+      }
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .rest_carrier {
+    position: relative;
+    top: -8rem;
+    .rest_info {
+      gap: 10px;
+    }
+
+    .tp {
+      top: -5.4rem;
+    }
+  }
+}
+
+// @media screen and (min-width: 576px) {
+//   main {
+//     .rest_info {
+//       h6 {
+//         font-size: 120px;
+//       }
+
+//       //   h3 {
+//       //     font-size: 45px;
+//       //   }
+//     }
+//   }
+// }

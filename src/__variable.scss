@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
@@ -7,8 +7,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 *,
 ::before,
@@ -22,8 +20,8 @@ $present: #c8a97e;
 $pure: white;
 $para: #898989;
 $june: #787878;
-$socials: #1F1F1F;
-$foot:#141313;
+$socials: #1f1f1f;
+$foot: #141313;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
 
@@ -31,7 +29,6 @@ $fontFamily: "Great Vibes", cursive;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-position: center center;
   background-attachment: fixed;
 }
 .btn {
@@ -45,11 +42,10 @@ $fontFamily: "Great Vibes", cursive;
     color: $pure;
   }
 }
-::placeholder{
-  color: $pure;
-}
+
 .form_carrier {
   background: $pure;
+  box-sizing: content-box;
   width: 50%;
   margin: 5rem 0 4rem 0;
   .form-intro {
@@ -79,6 +75,7 @@ $fontFamily: "Great Vibes", cursive;
         top: -2rem;
         font-family: $font;
         font-size: 3rem;
+        font-weight: bold;
       }
     }
   }
@@ -86,7 +83,7 @@ $fontFamily: "Great Vibes", cursive;
     padding: 3rem;
     font-family: $font;
     margin-top: -6rem;
-    label{
+    label {
       font-weight: bold;
     }
     input {
@@ -94,12 +91,146 @@ $fontFamily: "Great Vibes", cursive;
         border: 1px solid black;
       }
     }
-    .form_btn{
-     @include flex;
-     margin-top: 2rem;
-     .btn-sub{
-      padding: 1rem 4rem;
-     }
+    .form_btn {
+      @include flex;
+      margin-top: 2rem;
+      .btn-sub {
+        padding: 1rem 4rem;
+      }
+    }
+  }
+}
+
+.captions {
+  :nth-child(1) {
+    color: $present;
+    font-family: $fontFamily;
+  }
+
+  .trust {
+    font-family: $font;
+    font-weight: bold;
+    color: $pure;
+  }
+}
+
+.menuu {
+  font-family: $font;
+  img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.navig {
+  // @include flex;
+  // justify-content: space-evenly;
+  padding: 10px;
+  // background:red;
+  a{
+    text-decoration: none
+  }
+  .menu_selector {
+    @include flex;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    background-color: $pure;
+    color: #000000;
+    &:hover{
+    background: $present;
+      color: white;
+    }
+    &:active {
+      background: $present;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .captions {
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $present;
+        font-family: $fontFamily;
+        font-size: 5rem;
+      }
+      .trust {
+        position: relative;
+        top: -40px;
+        p {
+          font-family: $font;
+          font-size: 4rem;
+          font-weight: bold;
+          color: $pure;
+        }
+      }
+    }
+
+    .form_bg {
+      height: 120vh;
+    }
+
+    .grill {
+      position: relative;
+      top: -15rem;
+      z-index: 99;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $pure;
+      }
+      :nth-child(2) {
+        color: $para;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .form_bg {
+      height: 140vh;
+    }
+    .form_carrier {
+      width: 100%;
+      position: relative;
+      top: 30px;
+      right: 0;
+      left: 0;
+      .form-intro {
+        h4 {
+          font-size: 3.5rem;
+          text-wrap: nowrap;
+          top: 2rem;
+        }
+        .intro_inner {
+          top: 0;
+          h5 {
+            font-size: 1.5rem;
+            text-wrap: nowrap;
+            top: -0.4rem;
+          }
+        }
+      }
+      .main_form {
+        margin: 3rem 0 0 0;
+        label {
+          margin-bottom: 10px;
+        }
+        input {
+          padding: 0.6rem;
+          margin-bottom: 10px;
+        }
+        .form_btn {
+          .btn-sub {
+            padding: 0.7rem 2rem;
+          }
+        }
+      }
     }
   }
 }
