@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "../app.scss";
-
+import { IoCallSharp } from "react-icons/io5";
+import { SiMinutemailer } from "react-icons/si";
+import { MdAccessTime } from "react-icons/md";
 import ButtonComp from "./Button";
 import { useState, useEffect } from "react";
 
@@ -47,26 +49,35 @@ function NavComp() {
         style={headerStyle}
         className={isScrolled ? "bg-white" : "bg-transparent"}
       >
-        <div id="first_most_section" className={isScrolled ? "d-md-block " : "d-md-block d-sm-none"}>
+        <div
+          id="first_most_section"
+          className={isScrolled ? "d-md-block " : "d-md-block d-sm-none"}
+        >
           <div className="first_most_inner">
-            <div className="phone_no text-white-50">
-            
-              &nbsp;
-              <p>+234-903-090-239</p>
+            <div className="phone_no d-flex justify-content-between text-white-50">
+              <p>
+                <IoCallSharp size={25} /> &nbsp;+234-903-090-239
+              </p>
             </div>
-            <div className="mailing_address text-white-50">
-            
-              &nbsp;
-              <p>feliciano@hotmail.com</p>
+            <div className="mailing_address d-flex align-items-center text-white-50">
+              <p>
+                <SiMinutemailer size={25} /> &nbsp;feliciano@hotmail.com
+              </p>
             </div>
-            <div className="open_hrs text-white-50">
-              &nbsp;
-              <p>Open Hours: Monday - Sunday 8:00am - 9:00pm</p>
+            <div className="open_hrs d-flex align-items-center text-white-50">
+              <p>
+                <MdAccessTime size={25} />
+                &nbsp;Open Hours: Monday - Sunday 8:00am - 9:00pm
+              </p>
             </div>
           </div>
         </div>
         <div className="second_inner_in">
-          <Navbar expand="lg" fixed="top" className={isScrolled ? "mt-sm-0" : "mt-md-5"}>
+          <Navbar
+            expand="lg"
+            fixed="top"
+            className={isScrolled ? "mt-sm-0" : "mt-md-5"}
+          >
             <Container fluid="sm">
               <Navbar.Brand
                 href="/"
