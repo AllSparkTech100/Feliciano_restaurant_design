@@ -1,5 +1,6 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import "./pages.scss";
 
 function Drinks() {
   const menu = [
@@ -100,7 +101,7 @@ function Drinks() {
                           {items.ingredients}
                         </Card.Text>
                       </Card.Body>
-                      <Button className="w-100 btn border-0">Order Now</Button>
+                      <Button className="w-100 btn order_btn">Order Now</Button>
                     </Card>
                   </Col>
                 );

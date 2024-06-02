@@ -1,5 +1,7 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
 import "./pages.scss";
+import bike from "../Photos/bike.gif"
+
 
 function Contact() {
   return (
@@ -10,7 +12,7 @@ function Contact() {
             <h3 className="text-white text-center fw-bold">Contact</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">
-                Home
+                Home &gt;
               </a>
             </p>
           </div>
@@ -19,7 +21,9 @@ function Contact() {
         <Container fluid="sm" className="first-contact-section">
           <Row>
             <Col md={6} sm={12}>
-              <div className="left_map"></div>
+              <div className="left_map ">
+              <img src={bike} alt="" />
+              </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="right_form">
@@ -29,7 +33,7 @@ function Contact() {
                     <Form.Group Col={12} controlId="formGridName">
                       <Form.Control
                         type="text"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Your Name"
                       />
                     </Form.Group>
@@ -37,21 +41,37 @@ function Contact() {
                     <Form.Group Col={12} controlId="formGridEmail">
                       <Form.Control
                         type="email"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Your Email"
                         required
                       />
                     </Form.Group>
-                    <Form.Group Col={12} controlId="formGridEmail">
+
+                    <Form.Group Col={12} controlId="formGridSubject">
                       <Form.Control
                         type="email"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Subject"
                         required
                       />
                     </Form.Group>
+
+                    <Form.Group Col={12} controlId="formGridTextarea">
+                      <Form.Control
+                        type="text"
+                        className="shadow-none h-100 rounded-0 border-2 mb-4 p-3"
+                        placeholder="Message" as="textarea"
+                        required
+                      />
+                    </Form.Group>
                   </Row>
+                  <Col sm={6} lg={6} md={6}>
+                <div className="btn w-100 order_btn p-3 shadow-none">
+                Send Message
+              </div>
+                </Col>
                 </Form>
+                
               </div>
             </Col>
           </Row>
@@ -61,12 +81,12 @@ function Contact() {
             <h2>Contact Information</h2>
           </div>
           <Row className="last-contact-section" gap={1}>
-            <Col md={3} sm={12}>
+            <Col md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Address: 198 West 21th Street, Suite 721 New York NY 10016
               </p>
             </Col>
-            <Col md={3} sm={12}>
+            <Col md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Phone:&nbsp;
                 <span>
@@ -76,7 +96,7 @@ function Contact() {
                 </span>
               </p>
             </Col>
-            <Col md={3} sm={12}>
+            <Col md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Email:&nbsp;
                 <span>
@@ -89,9 +109,9 @@ function Contact() {
                 </span>
               </p>
             </Col>
-            <Col md={3} sm={12}>
-              <p className="fs-5">
-                Phone:&nbsp;
+            <Col md={12} lg={12} sm={12}>
+              <p className="fs-5 d-md-flex align-items-center">
+                Website:&nbsp;
                 <span>
                   <a
                     href="http://yoursite.com"

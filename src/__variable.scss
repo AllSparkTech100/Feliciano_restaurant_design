@@ -2,6 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap");
+
+$present: #c8a97e;
+$pure: white;
+$para: #898989;
+$june: #787878;
+$socials: #1f1f1f;
+$foot: #141313;
+$font: "Poppins", sans-serif;
+$fontFamily: "Great Vibes", cursive;
+$apsFont: "Montagu Slab";
+
 @mixin flex {
   display: flex;
   align-items: center;
@@ -16,14 +28,9 @@
   text-decoration: none;
 }
 
-$present: #c8a97e;
-$pure: white;
-$para: #898989;
-$june: #787878;
-$socials: #1f1f1f;
-$foot: #141313;
-$font: "Poppins", sans-serif;
-$fontFamily: "Great Vibes", cursive;
+.blog_page {
+  margin-top: -10rem;
+}
 
 .bg-image {
   background-repeat: no-repeat;
@@ -46,7 +53,7 @@ $fontFamily: "Great Vibes", cursive;
 .form_carrier {
   background: $pure;
   box-sizing: content-box;
-  width: 50%;
+  width: 80%;
   margin: 5rem 0 4rem 0;
   .form-intro {
     width: 100%;
@@ -106,7 +113,6 @@ $fontFamily: "Great Vibes", cursive;
     color: $present;
     font-family: $fontFamily;
   }
-
   .trust {
     font-family: $font;
     font-weight: bold;
@@ -114,123 +120,610 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
+.show_case {
+  width: 100%;
+  padding: 9px;
+  .double_images {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    img {
+      width: 300px;
+      height: 500px;
+      min-height: 50dvh;
+      object-fit: cover;
+    }
+    .item_1 {
+      grid-column: auto;
+    }
+    .item_2 {
+      grid-column: auto;
+      margin-top: 30px;
+    }
+  }
+  .shop_time {
+    margin-left: 1rem;
+    grid-column: auto;
+    margin-top: 40px;
+    p {
+      margin-top: -90px;
+      text-align: justify;
+    }
+    .thime {
+      color: $present;
+    }
+    .brand_header {
+      text-transform: capitalize;
+      font-size: 6rem;
+      font-family: $fontFamily;
+      color: $present;
+    }
+    .brand_name {
+      font-family: $font;
+      font-size: 5rem;
+      position: relative;
+      top: -5rem;
+      left: 0;
+      right: 0;
+      bottom: 5rem;
+    }
+  }
+}
+
 .menuu {
   font-family: $font;
   img {
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
+    height: 80%;
+  }
+}
+
+.order_btn {
+  border: none;
+  &:hover {
+    border: 1px solid $present;
+    background: $pure;
+    color: $present;
   }
 }
 
 .navig {
-  // @include flex;
-  // justify-content: space-evenly;
   padding: 10px;
-  // background:red;
-  a{
-    text-decoration: none
-  }
   .menu_selector {
     @include flex;
-    padding: 0.8rem 2rem;
     text-align: center;
     background-color: $pure;
     color: #000000;
-    &:hover{
-    background: $present;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    &.active {
+      background-color: $present;
       color: white;
     }
-    &:active {
+    &:hover {
       background: $present;
       color: white;
     }
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    .captions {
-      position: absolute;
-      top: 40%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      :nth-child(1) {
-        color: $present;
-        font-family: $fontFamily;
-        font-size: 5rem;
+@media screen and (min-width: 768px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 3rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $pure;
       }
-      .trust {
-        position: relative;
-        top: -40px;
-        p {
-          font-family: $font;
-          font-size: 4rem;
-          font-weight: bold;
-          color: $pure;
+    }
+  }
+  .form_bg {
+    height: 165vh;
+    padding: 0;
+  }
+  .form_carrier {
+    width: 70%;
+    position: relative;
+    top: 30px;
+    right: 0;
+    margin-left: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 2rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
         }
       }
     }
-
-    .form_bg {
-      height: 120vh;
+    .main_form {
+      margin: 3rem 0 0 0;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 0.6rem;
+        margin-bottom: 10px;
+      }
+      .form_btn {
+        .btn-sub {
+          padding: 0.7rem 2rem;
+        }
+      }
     }
+  }
+  .show_case {
+    .double_images {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 9px;
+      margin-left: -10px;
+      img {
+        width: 200px;
+        height: 450px;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+      }
+    }
+    .shop_time {
+      margin: 30px 0 0 0;
+      grid-column: auto;
+      p {
+        margin-top: -70px;
+      }
+      .brand_header {
+        font-size: 4rem;
+      }
+      .brand_name {
+        font-size: 2rem;
+        top: -4rem;
+      }
+    }
+  }
+}
 
-    .grill {
+@media screen and (min-width: 1200px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 5rem;
+    }
+    .trust {
       position: relative;
-      top: -15rem;
-      z-index: 99;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      :nth-child(1) {
+      top: -40px;
+      p {
+        font-family: $font;
+        font-size: 4rem;
+        font-weight: bold;
         color: $pure;
       }
-      :nth-child(2) {
-        color: $para;
+    }
+  }
+  .form_bg {
+    height: 145vh;
+  }
+  .grill {
+    position: relative;
+    top: -15rem;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $pure;
+    }
+    :nth-child(2) {
+      color: $para;
+    }
+  }
+  .show_case {
+    width: 100%;
+    padding: 9px;
+    margin-top: -12rem;
+    .double_images {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      img {
+        width: 300px;
+        height: 500px;
+        min-height: 50dvh;
+        object-fit: cover;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+        margin-top: 30px;
+      }
+    }
+    .shop_time {
+      margin-left: 1rem;
+      grid-column: auto;
+      margin-top: 40px;
+      p {
+        margin-top: -90px;
+        text-align: justify;
+      }
+      .thime {
+        color: $present;
+      }
+      .brand_header {
+        text-transform: capitalize;
+        font-size: 6rem;
+        font-family: $fontFamily;
+        color: $present;
+      }
+      .brand_name {
+        font-family: $font;
+        font-size: 5rem;
+        position: relative;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  .form_bg {
+    height: 195vh;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   .form_bg {
+    height: 150vh;
+    padding: 0;
+  }
+  .show_case {
+    .double_images {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 9px;
+      margin-left: -10px;
+      img {
+        width: 223px;
+        height: 300px;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+      }
+    }
+    .shop_time {
+      margin: 40px 0 0 0;
+      grid-column: auto;
+      p {
+        margin-top: -50px;
+      }
+      .brand_header {
+        font-size: 4rem;
+      }
+      .brand_name {
+        font-size: 2rem;
+        top: -4rem;
       }
     }
   }
 
-  @media screen and (max-width: 480px) {
-    .form_bg {
-      height: 140vh;
-    }
-    .form_carrier {
-      width: 100%;
-      position: relative;
-      top: 30px;
-      right: 0;
-      left: 0;
-      .form-intro {
-        h4 {
-          font-size: 3.5rem;
+  .form_carrier {
+    width: 100%;
+    position: relative;
+    top: 30px;
+    right: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 3.5rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 1.5rem;
           text-wrap: nowrap;
-          top: 2rem;
-        }
-        .intro_inner {
-          top: 0;
-          h5 {
-            font-size: 1.5rem;
-            text-wrap: nowrap;
-            top: -0.4rem;
-          }
+          top: -0.4rem;
         }
       }
-      .main_form {
-        margin: 3rem 0 0 0;
-        label {
-          margin-bottom: 10px;
-        }
-        input {
-          padding: 0.6rem;
-          margin-bottom: 10px;
-        }
-        .form_btn {
-          .btn-sub {
-            padding: 0.7rem 2rem;
-          }
+    }
+    .main_form {
+      margin: 3rem 0 0 0;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 0.6rem;
+        margin-bottom: 10px;
+      }
+      .form_btn {
+        .btn-sub {
+          padding: 0.7rem 2rem;
         }
       }
+    }
+  }
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 5rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        font-size: 4rem;
+        text-wrap: nowrap;
+        font-weight: bold;
+        color: $pure;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 3rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        text-wrap: wrap;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: $pure;
+      }
+    }
+  }
+
+  main {
+    #menu {
+      .menu_head {
+        h4 {
+          top: 40px;
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .form_
+
+  .contact_intro {
+    .contact_text {
+      text-align: center;
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 65%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: $font;
+        z-index: -3;
+      }
+    }
+  }
+  .show_case {
+    .double_images {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 9px;
+      margin-left: -10px;
+      img {
+        width: 140px;
+        height: 300px;
+      }
+    }
+    .shop_time {
+      margin: 40px 0 0 0;
+      grid-column: auto;
+      width: 84dvw;
+      p {
+        margin-top: -50px;
+      }
+      .brand_header {
+        font-size: 4rem;
+      }
+      .brand_name {
+        font-size: 1.4rem;
+        top: -3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 3rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        font-size: 32px;
+        text-wrap: nowrap;
+        font-weight: bold;
+        color: $pure;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  // .form_bg {
+  //   height: 150vh;
+  //   padding: 0;
+  // }
+  .show_case {
+    .double_images {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 9px;
+      margin-left: -10px;
+      img {
+        width: 223px;
+        height: 300px;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+      }
+    }
+    .shop_time {
+      margin: 40px 0 0 0;
+      grid-column: auto;
+      p {
+        margin-top: -50px;
+      }
+      .brand_header {
+        font-size: 4rem;
+      }
+      .brand_name {
+        font-size: 2rem;
+        top: -4rem;
+      }
+    }
+  }
+ 
+}
+
+@media screen and (min-width: 991px) {
+  .show_case {
+    width: 100%;
+    padding: 9px;
+    .double_images {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      img {
+        width: 300px;
+        height: 500px;
+        min-height: 50dvh;
+        object-fit: cover;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+        margin-top: 30px;
+      }
+    }
+    .shop_time {
+      margin-left: 1rem;
+      grid-column: auto;
+      margin-top: 40px;
+      p {
+        margin-top: -90px;
+        text-align: justify;
+      }
+      .thime {
+        color: $present;
+      }
+      .brand_header {
+        text-transform: capitalize;
+        font-size: 6rem;
+        font-family: $fontFamily;
+        color: $present;
+      }
+      .brand_name {
+        font-family: $font;
+        font-size: 5rem;
+        position: relative;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        bottom: 5rem;
+      }
+    }
+  }
+  .grill {
+    position: relative;
+    top: -16rem;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $pure;
+    }
+    :nth-child(2) {
+      color: $para;
     }
   }
 }
