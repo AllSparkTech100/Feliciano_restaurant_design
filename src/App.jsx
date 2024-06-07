@@ -3,14 +3,27 @@ import Pages from "./Pages/Pages";
 import "./app.scss";
 import NavComp from "./Components/NavComp";
 import Footer from "./Components/Footer";
-
+import Loader from "./Components/Loader";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      <NavComp />
-      <Pages />
-      <Footer />
+      {loading && <Loader />}
+      {!loading && (
+        <div className="content">
+          <NavComp />
+          <Pages />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
