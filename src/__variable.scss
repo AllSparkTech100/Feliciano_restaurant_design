@@ -401,7 +401,7 @@ $apsFont: "Montagu Slab";
 
 
 @media screen and (max-width: 480px) {
-   .form_bg {
+  .form_bg {
     height: 150vh;
     padding: 0;
   }
@@ -560,6 +560,7 @@ $apsFont: "Montagu Slab";
     }
   }
   .show_case {
+    
     .double_images {
       display: flex;
       align-items: center;
