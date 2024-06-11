@@ -96,11 +96,11 @@ function Home() {
               <Row className=" show_case">
                 <Col>
                   <div className="double_images">
-                    <div className="item_1">
-                      <Image src={chef} alt="" />
+                    <div className="item_1 w-100">
+                      <Image src={chef}  alt="" />
                     </div>
                     <div className="item_2">
-                      <Image src={barr} alt="" />
+                      <Image src={barr}  alt="" />
                     </div>
                   </div>
                 </Col>
