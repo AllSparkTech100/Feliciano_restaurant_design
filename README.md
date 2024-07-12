@@ -1,4 +1,4 @@
-## Feliciano Restaurant Website
+##Feliciano Restaurant Website
 
 Welcome to the repository for the **Feliciano Restaurant Website**! This project is a modern, responsive website built using React.js, Bootstrap, CSS, Framer-Motion, AOS,. It aims to provide a seamless and engaging experience for users looking to explore the restaurant's menu, make reservations, and learn more about the restaurant.
 
@@ -39,8 +39,10 @@ This template provides a minimal setup to get React working in Vite with HMR and
 - [React-Bootstrap](https://react-bootstrap.github.io/) - For additional styling
 - [React-Icons](https://react-icons.github.io/react-icons/) - For SVG icons
 - [React-Scroll Trigger](https://www.npmjs.com/package/react-scroll-trigger) - For Onscroll Trigger animations
+
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#
 
 ## Contributing
 

@@ -1,7 +1,7 @@
 import "./pages.scss";
 import { useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
-import Counterr from "../Components/Counter"
+import Counterr from "../Components/Counter";
 import Slide from "../Components/Slide";
 import Test from "../Components/Test";
 import CircleImage from "../Components/CircleImage";
